@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity {
     TextView txtresultado;
 
@@ -22,8 +23,11 @@ public class MainActivity extends AppCompatActivity {
 
 public void mostrar1 (View view) {
     Cuenta usuario1 = new Cuenta();
-    txtresultado.setText("Titular "+ usuario1.titular+" saldo: "+usuario1.cantidad);
-  //  Toast.makeText(this, "Titular" + usuario1.titular+" y el saldo es "+usuario1.cantidad, Toast.LENGTH_LONG).show();
+
+    txtresultado.setText(usuario1.mostrar_saldo());
+
+  //  Toast.makeText(this, usuario1, Toast.LENGTH_SHORT).show();
+    
     //Toast.makeText(this, "El saldo es: "+ usuario1.cantidad, Toast.LENGTH_LONG).show();
 
 }
