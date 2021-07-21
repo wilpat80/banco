@@ -9,7 +9,7 @@ public class Cuenta {
         cantidad = 45500.5;
     }
 
-    public String muetra_saldo(){  //GET
+    public String muestra_saldo(){  //GET
        return "Titular "+ titular+" saldo: "+cantidad;
     }
 

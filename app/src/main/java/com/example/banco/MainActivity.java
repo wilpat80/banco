@@ -18,10 +18,10 @@ public class MainActivity extends AppCompatActivity {
         public void modificar_saldo(View view){
             Cuenta usuario = new Cuenta();
             usuario.modifica_saldo(25000.5);
-            txtresultado.setText(usuario.muetra_saldo());
+            txtresultado.setText(usuario.muestra_saldo());
         }
         public void mostrar_saldo (View view) {
             Cuenta usuario = new Cuenta();
-            txtresultado.setText(usuario.muetra_saldo());
+            txtresultado.setText(usuario.muestra_saldo());
         }
 }
