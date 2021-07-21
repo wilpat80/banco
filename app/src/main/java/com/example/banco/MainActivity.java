@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
             usuario.modifica_saldo(25000.5);
             txtresultado.setText(usuario.muestra_saldo());
         }
-        public void mostrar_saldo (View view) {
+        public void mostrar_datos (View view) {
             Cuenta usuario = new Cuenta();
-            txtresultado.setText(usuario.muestra_saldo());
+            txtresultado.setText(usuario.muestra_datos());
         }
 }
