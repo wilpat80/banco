@@ -9,13 +9,12 @@ public class Cuenta {
         cantidad = 45500.5;
     }
 
-    public String mostrar_saldo(){  //GET
+    public String muetra_saldo(){  //GET
        return "Titular "+ titular+" saldo: "+cantidad;
     }
 
-    public String toString (){    //tostring no funciona*****
-        return "Titular "+ titular+" saldo: "+cantidad;
-
+    public void modifica_saldo(Double cantidad){  //SET
+        this.cantidad = cantidad;
 
     }
 }
